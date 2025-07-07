@@ -1,0 +1,146 @@
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-slide-down {
+  animation: slideDown 0.4s ease-out;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.animate-slide-up {
+  animation: slideDown 0.4s ease-in reverse;
+}
+
+
+.patient-sidebar {
+  background-color: #fff;
+  border-right: 1px solid #e5e7eb;
+  width: 240px;
+  min-height: 100vh;
+  padding: 1.5rem 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+}
+
+.patient-sidebar.collapsed {
+  transform: translateX(-100%);
+}
+
+.patient-sidebar h2 {
+  color: #2563eb;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.patient-sidebar nav {
+  margin-top: 2rem;
+}
+
+.patient-sidebar button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  background: none;
+  font-weight: 500;
+  color: #374151;
+  transition: background 0.2s;
+}
+
+.patient-sidebar button.active {
+  background-color: #dbeafe;
+  color: #1d4ed8;
+}
+
+.patient-sidebar button:hover {
+  background-color: #f3f4f6;
+}
+
+.patient-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #fff;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.patient-topbar .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid #60a5fa;
+}
+
+.patient-topbar .notification {
+  font-size: 1.25rem;
+  cursor: pointer;
+  margin-right: 1rem;
+  position: relative;
+}
+
+.patient-topbar .notification::after {
+  content: "!";
+  font-size: 0.7rem;
+  color: white;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  width: 14px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .patient-sidebar {
+    position: fixed;
+    z-index: 40;
+    background-color: white;
+  }
+
+  .hamburger-btn {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #1f2937;
+    cursor: pointer;
+  }
+
+  .patient-topbar h1 {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+}
