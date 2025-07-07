@@ -73,7 +73,7 @@ const AdminDashboard = () => {
           operations: 250,
           successRate: 97,
           contact: "sarah.ortho@clinic.com",
-          avatar: "src/assets/doctor2.png",
+          avatar: "../assets/doctor2.png",
         },
         {
           role: "Dentist",
@@ -83,7 +83,7 @@ const AdminDashboard = () => {
           operations: 180,
           successRate: 94,
           contact: "john.endo@clinic.com",
-          avatar: "src/assets/doctor1.png",
+          avatar: "../assets/doctor1.png",
         },
         {
           role: "Dentist",
@@ -93,7 +93,7 @@ const AdminDashboard = () => {
           operations: 300,
           successRate: 99,
           contact: "emily.pedo@clinic.com",
-          avatar: "src/assets/doctor5.png",
+          avatar: "../assets/doctor5.png",
         },
         {
           role: "Dentist",
@@ -103,7 +103,7 @@ const AdminDashboard = () => {
           operations: 210,
           successRate: 92,
           contact: "michael.surgery@clinic.com",
-          avatar: "src/assets/doctor3.png",
+          avatar: "../assets/doctor3.png",
         },
         {
           role: "Dentist",
@@ -113,7 +113,7 @@ const AdminDashboard = () => {
           operations: 150,
           successRate: 95,
           contact: "lisa.prostho@clinic.com",
-          avatar: "src/assets/doctor6.png",
+          avatar: "../assets/doctor6.png",
         },
         {
           role: "Dentist",
@@ -123,7 +123,7 @@ const AdminDashboard = () => {
           operations: 170,
           successRate: 93,
           contact: "david.perio@clinic.com",
-          avatar: "src/assets/doctor4.png",
+          avatar: "../assets/doctor4.png",
         },
         
       ];

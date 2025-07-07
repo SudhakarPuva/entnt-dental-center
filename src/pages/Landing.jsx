@@ -19,7 +19,7 @@ const Landing = () => {
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/50 shadow px-6 py-4 flex justify-between items-center">
         <div className="text-2xl font-bold text-primary flex items-center gap-2">
-          <img src="/src/assets/medical-team.png" className="w-8 h-8 md:w-10 md:h-10" alt="Logo" />
+          <img src="../assets/medical-team.png" className="w-8 h-8 md:w-10 md:h-10" alt="Logo" />
           ENTNT Dental Craft
         </div>
         <nav className="hidden md:flex gap-6 text-sm font-medium">
@@ -43,7 +43,7 @@ const Landing = () => {
         id="home"
         className="pt-5 scroll-mt-20 min-h-[100vh] flex flex-col items-center justify-center text-center px-6 md:px-12 lg:px-24 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/src/assets/Hero_Section.png')",
+          backgroundImage: "url('../assets/Hero_Section.png')",
         }}
       >
         <h1 className="text-4xl md:text-6xl font-bold text-primary mb-4" data-aos="fade-up">
@@ -69,7 +69,7 @@ const Landing = () => {
           Founded in 2015, ENTNT Dental Center offers compassionate, high-tech dental care. Our mission is to brighten lives one smile at a time.
         </p>
         <img
-          src="src/assets/ENTNTdc.jpg"
+          src="../assets/ENTNTdc.jpg"
           alt="clinic"
           className="mt-6 mx-auto rounded-lg shadow-lg max-w-xlg"
         />
@@ -80,14 +80,14 @@ const Landing = () => {
         <h2 className="text-3xl font-bold text-center text-primary mb-10">Our Services</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto text-center">
           {[
-            { name: "Teeth Cleaning", img: "src/assets/toothCleaning.png" },
-            { name: "Dental Implants", img: "src/assets/dentalImplant.png" },
-            { name: "Braces & Aligners", img: "src/assets/bracesAligners.png" },
-            { name: "Root Canal", img: "src/assets/rootCanal.png" },
-            { name: "Pediatric Dentistry", img: "src/assets/pediatric dentistry.png" },
-            { name: "Cosmetic Dentistry", img: "src/assets/cosmeticDentistry.png" },
-            { name: "Wisdom Tooth Removal", img: "src/assets/wisdomToothRemoval.png" },
-            { name: "Emergency Dental Care", img: "src/assets/emergencyDentalCare.png" },
+            { name: "Teeth Cleaning", img: "/assets/toothCleaning.png" },
+            { name: "Dental Implants", img: "/assets/dentalImplant.png" },
+            { name: "Braces & Aligners", img: "/assets/bracesAligners.png" },
+            { name: "Root Canal", img: "/assets/rootCanal.png" },
+            { name: "Pediatric Dentistry", img: "/assets/pediatric dentistry.png" },
+            { name: "Cosmetic Dentistry", img: "/assets/cosmeticDentistry.png" },
+            { name: "Wisdom Tooth Removal", img: "/assets/wisdomToothRemoval.png" },
+            { name: "Emergency Dental Care", img: "/assets/emergencyDentalCare.png" },
           ].map((service, index) => (
             <div
               key={index}
@@ -112,12 +112,12 @@ const Landing = () => {
         <h2 className="text-3xl font-bold text-center text-primary mb-8">Why Choose Us?</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto text-center">
           {[
-            { title: "Certified Professionals", img: "src/assets/certifiedProffesionals.png" },
-            { title: "Latest Equipment", img: "src/assets/latestEquipment.png" },
-            { title: "Hygienic Environment", img: "src/assets/hygenic.png" },
-            { title: "Affordable Pricing", img: "src/assets/affordable.png" },
-            { title: "24/7 Emergency Care", img: "src/assets/24-7.png" },
-            { title: "Free First Consultation", img: "src/assets/free.png" },
+            { title: "Certified Professionals", img: "/assets/certifiedProffesionals.png" },
+            { title: "Latest Equipment", img: "/assets/latestEquipment.png" },
+            { title: "Hygienic Environment", img: "/assets/hygenic.png" },
+            { title: "Affordable Pricing", img: "/assets/affordable.png" },
+            { title: "24/7 Emergency Care", img: "/assets/24-7.png" },
+            { title: "Free First Consultation", img: "/assets/free.png" },
           ].map((feature, index) => (
             <div
               key={index}
@@ -172,8 +172,8 @@ const Landing = () => {
       <section className="py-16 px-6 bg-white scroll-mt-20" data-aos="fade-up">
         <h2 className="text-3xl font-bold text-center text-primary mb-6">Before & After Gallery</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          <img src="/src/assets/before.png" alt="Before" className="rounded shadow-lg hover:scale-105 transition" />
-          <img src="/src/assets/after.png" alt="After" className="rounded shadow-lg hover:scale-105 transition" />
+          <img src="/assets/before.png" alt="Before" className="rounded shadow-lg hover:scale-105 transition" />
+          <img src="/assets/after.png" alt="After" className="rounded shadow-lg hover:scale-105 transition" />
         </div>
       </section>
 
